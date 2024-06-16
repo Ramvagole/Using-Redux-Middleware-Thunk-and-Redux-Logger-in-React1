@@ -5,7 +5,8 @@ export function Coffee(){
 
     )
     return(
-        <div style={{display:"grid",gridTemplateColumns:"repeat(3,300px)",gridTemplateRows:"repeat(5,750px)",gridRowGap:"0px",gridColumnGap:"15px"}}>
+        
+        <div style={{marginTop:"150px",display:"grid",gridTemplateColumns:"repeat(3,300px)",gridTemplateRows:"repeat(5,750px)",gridRowGap:"0px",gridColumnGap:"15px"}}>
         {
             sele.data.map((v,i)=>{
                 return(

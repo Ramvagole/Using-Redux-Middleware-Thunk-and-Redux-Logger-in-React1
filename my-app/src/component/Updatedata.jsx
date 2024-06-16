@@ -5,3 +5,11 @@ export let fetchData=async(disp)=>{
     
     disp({type:"dataStore",payload:b.data})
 }
+
+export function getPassword(data,setVal){
+    fetch("https://reqres.in/api/login",{
+        method:"POST",
+        headers:{"content-type":"application/json"},
+        body:JSON.stringify(data)
+    }).then((e)=>e.json()).then((e)=>{setVal(e)})
+}
